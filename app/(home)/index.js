@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Feather, Entypo, Ionicons, Octicons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
+import { FontAwesome } from '@expo/vector-icons';
 
 const index = () => {
   const router = useRouter();
@@ -53,7 +54,7 @@ const index = () => {
                   justifyContent: "center",
                 }}
               >
-                <Ionicons name="ios-people-sharp" size={24} color="black" />
+            <Ionicons name="people" size={24} color="black" />
               </View>
               <Text style={{ marginTop: 7, fontWeight: "600" }}>
                 Employee List
@@ -80,7 +81,7 @@ const index = () => {
                   justifyContent: "center",
                 }}
               >
-                <Ionicons name="ios-people-sharp" size={24} color="black" />
+          <FontAwesome name="sign-in" size={24} color="black" />
               </View>
               <Text style={{ marginTop: 7, fontWeight: "600" }}>
                 Mark Attendance

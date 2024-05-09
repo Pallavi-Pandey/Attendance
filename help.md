@@ -65,3 +65,10 @@ npx cross-env BABEL_SHOW_CONFIG_FOR=/home/pandey/pallavi/Attendance/employee-app
 -----------------------------------------Continue With Video--------------------------------------
 <hr>
 
+
+
+- when my icons are not loaded
+  - https://stackoverflow.com/questions/57349431/error-with-expo-fontfamily-material-community-is-not-a-system-font-and-has-not
+
+  - `rm -rf ./node_modules/expo/node_modules/expo-font/`
+    - this fixed my issues

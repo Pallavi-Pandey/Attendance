@@ -1,10 +1,14 @@
 import { Pressable, StyleSheet, Text, View, TextInput } from "react-native";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Ionicons } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
+// import { Ionicons } from "@expo/vector-icons";
+// import { AntDesign } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import SearchResults from "../../components/SearchResults";
+import Ionicons from '@expo/vector-icons/Ionicons';
+import  AntDesign from '@expo/vector-icons/AntDesign';
+import Octicons from '@expo/vector-icons/Octicons';
+// AntDesign.loadFont();
 
 const employees = () => {
   const [employees, setEmployees] = useState([]);
