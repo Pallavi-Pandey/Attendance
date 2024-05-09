@@ -8,7 +8,6 @@ const employees = () => {
     </View>
   )
 }
-
 export default employees
 
 const styles = StyleSheet.create({})
