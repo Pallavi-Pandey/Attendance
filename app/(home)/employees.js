@@ -4,6 +4,7 @@ import axios from "axios";
 import { Ionicons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
+import SearchResults from "../../components/SearchResults";
 
 const employees = () => {
   const [employees, setEmployees] = useState([]);
@@ -12,7 +13,7 @@ const employees = () => {
   useEffect(() => {
     const fetchEmployeeData = async () => {
       try {
-        const response = await axios.get("http://192.168.43.57:8000/employees");
+        const response = await axios.get("http://192.168.43.57:8000/getEmployees");
         setEmployees(response.data);
       } catch (error) {
         console.log("error fetching employee data", error);
