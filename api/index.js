@@ -76,8 +76,9 @@ app.get("/getEmployees", async (req, res) => {
 });
 
 app.post("/attendance", async (req, res) => {
+  console.log(req.body)
   try {
-    const { employeeId, date, time, status } = req.body;
+    const { employeeId, date,employeeName, time, status } = req.body;
 
     const existingAttendance = await Attendance.findOne({
       employeeId,
@@ -99,6 +100,7 @@ app.post("/attendance", async (req, res) => {
       return res.status(200).json(newAttendance);
     }
   } catch (error) {
+    console.log("Error adding attendance:", error)
     res.status(500).json({ message: "Failed to add attendance" });
   }
 });
@@ -111,6 +113,7 @@ app.get("/attendance", async (req, res) => {
 
     res.status(200).json(attendanceDate);
   } catch (error) {
+
     res.status(500).json({ message: "Failed to fetch attendance" });
   }
 });

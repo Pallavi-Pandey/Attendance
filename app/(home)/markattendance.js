@@ -164,4 +164,4 @@ const markattendance = () => {
 
 export default markattendance;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({}); 
